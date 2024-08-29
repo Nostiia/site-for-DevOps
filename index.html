@@ -12,6 +12,7 @@
         }
         body, html {
             height: 100%;
+            width: 100%;
             font-family: Arial, sans-serif;
             background: linear-gradient(135deg, #5facff80, #ebf9ff);
             display: flex;
@@ -34,11 +35,14 @@
             color: #505050;
             font-size: 2em;
         }
-        
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body>
-    <div>
+    <div class="container">
         <h1>Welcome to the Site</h1>
         <p>Hello! My name is <span class="name">Anastasiia Holubieva</span>.</p>
         <p>This site is simple example for my homework.</p>
