@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
     <style>
-        body {
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100%;
             font-family: Arial, sans-serif;
             background: linear-gradient(135deg, #5facff80, #ebf9ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
             color: #fff;
             text-align: center;
-            padding-left: 50px;
-            padding-right: 50px;
-            padding-top: 100px;
         }
         h1 {
             font-size: 4em;
@@ -28,12 +34,18 @@
             color: #505050;
             font-size: 2em;
         }
+        .container {
+            max-width: 80%;
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body>
-    <h1>Welcome</h1>
-    <p>Hello! My name is <span class="name">Anastasiia Holubieva</span>.</p>
-    <p>This site is simple example for my homework.</p>
+    <div class="container">
+        <h1>Welcome to My Beautiful Site</h1>
+        <p>Hello! My name is <span class="name">Anastasiia Holubieva</span>.</p>
+        <p>This site is simple example for my homework.</p>
+    </div>
 </body>
 </html>
 
