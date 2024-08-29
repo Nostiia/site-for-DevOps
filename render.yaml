@@ -1,0 +1,16 @@
+version: 1
+services:
+  site:
+    build:
+      context: .
+    run:
+      type: web
+      command: python3 -m http.server 8000
+    entrypoint: /bin/sh -c
+    ports:
+      - 8000:8000
+    healthcheck:
+      test: wget --spider -q http://localhost:8000 || exit 1
+      interval: 1m30s
+      timeout: 10s
+      retries: 3
